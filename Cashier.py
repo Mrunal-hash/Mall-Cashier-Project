@@ -123,7 +123,7 @@ while proceed:
     discount = getDiscount()
 
     grand_total = total - round(total*discount,2)
-    print("Your grand total is: $" +str(grand_total))
+        print("Your total is $" +str(total)+ ". Your total after discount is: $" +str(grand_total)+ ". You have saved $" + str(round(total*discount,2))+ " on your bill.")
 
     if not replay():
         print("***THANK YOU FOR SHOPPING WITH US!***")
