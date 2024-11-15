@@ -22,8 +22,7 @@ def inventory(product):
 
     return product
 
-# Step 2 - Create a function to add all the items and their respective
-# qty and verify if the items are available in the inventory
+# Step 2 - Create a function to add all the items and their respective quantity and verify if the items are available in the inventory
 def groceryList():
     grocery_list = {}
     addItem = True
@@ -52,7 +51,7 @@ def groceryList():
     # Returns a dictionary of product and it's quantity after addition
     return  grocery_list
 
-#Step 2: Calculate the total after adding the items and their price
+#Step 3: Calculate the total after adding the items and their price
 def getPrice(product, qty):
     price_list = {
         'MILK':2,
@@ -71,7 +70,7 @@ def getPrice(product, qty):
     # Returns the cost of the product
     return subtotal
 
-#Step 3: Do a total sum of the list after discount
+#Step 4: Do a total sum of the list after discount
 
 def getDiscount():
     membership = ''
@@ -87,19 +86,20 @@ def getDiscount():
     else:
         return 0
 
+#Step 5: To repeat the next checkout
 def replay():
 
     choice = input("Do you like to do another checkout? Yes/No: ").upper()
     # Returns to the start if you want to check out again
     return choice == 'YES' or choice == 'Y'
 
-#Step 4: To create the cashier system
+#Step 6: To create the cashier system
 
 #Welcome statement
 print("WELCOME TO THE MART!")
 
 checkout = ''
-# To ask if the customer wants to checkout
+# To check if the customer wants to checkout
 while checkout != 'Y' and checkout != 'N':
     checkout = input("Are you ready to checkout? Y/N: ").upper()
 
